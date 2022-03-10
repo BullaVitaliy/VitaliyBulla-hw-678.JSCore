@@ -15,7 +15,7 @@ const oblject = {
   string: "abc",
   number: 1,
   boolean: true,
-  undefined: "",
+  undefined: undefined,
   null: null,
 };
 
