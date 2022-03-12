@@ -1,21 +1,21 @@
 //task-1
-// let x = '1';
-// let y = '2';
-// let res1 = x + y;
-// console.log(res1);
-// console.log(typeof res1);
+let x = '1';
+let y = '2';
+let res1 = x + y;
+console.log(res1);
+console.log(typeof res1);
 
-// let res2 = 'true' + y;
-// console.log(res2);
-// console.log(typeof res2);
+let res2 = 'true' + y;
+console.log(res2);
+console.log(typeof res2);
 
-// let res3 = x < y;
-// console.log(res3);
-// console.log(typeof res3);
+let res3 = x < y;
+console.log(res3);
+console.log(typeof res3);
 
-// let res4 = +('x' + 'y');
-// console.log(res4);
-// console.log(typeof res4);
+let res4 = +('x' + 'y');
+console.log(res4);
+console.log(typeof res4);
 
 //task-2
 // let a = +prompt('Введіть ціле число:');
@@ -69,31 +69,31 @@
 // }
 
 //task-6
-const a = +prompt("Довжина сторони трикутника - a: ");
-const b = +prompt("Довжина сторони трикутника - b: ");
-const c = +prompt("Довжина сторони трикутника - c: ");
+// const a = +prompt("Довжина сторони трикутника - a: ");
+// const b = +prompt("Довжина сторони трикутника - b: ");
+// const c = +prompt("Довжина сторони трикутника - c: ");
 
-if(isNaN(a) || isNaN(b) || isNaN(c)) {
-    alert('Incorrect data');
-}
+// if(isNaN(a) || isNaN(b) || isNaN(c)) {
+//     alert('Incorrect data');
+// }
 
-if (
-  //перевірка чи є гіпотенуза
-  c ** 2 == (a + b) ** 2 ||
-  a ** 2 == (c + b) ** 2 ||
-  b ** 2 == (a + c) ** 2
-) {
-  console.log("прямокутник");
-  // S для прямокутного трикутника
-  const s = (a * b) / 2 || (c * b) / 2 || (a * c) / 2;
-  console.log("S = " + s.toFixed(3));
-} else {
-  console.log("НЕ прямокутник");
-  // S для не прямокутного трикутника
-  const p = (1 / 2) * (a + b + c);
-  const s = Math.sqrt(p * (p - a) * (p - b) * (p - c));
-  console.log("S = " + s.toFixed(3));
-}
+// if (
+//   //перевірка чи є гіпотенуза
+//   c ** 2 == (a + b) ** 2 ||
+//   a ** 2 == (c + b) ** 2 ||
+//   b ** 2 == (a + c) ** 2
+// ) {
+//   console.log("прямокутник");
+//   // S для прямокутного трикутника
+//   const s = (a * b) / 2 || (c * b) / 2 || (a * c) / 2;
+//   console.log("S = " + s.toFixed(3));
+// } else {
+//   console.log("НЕ прямокутник");
+//   // S для не прямокутного трикутника
+//   const p = (1 / 2) * (a + b + c);
+//   const s = Math.sqrt(p * (p - a) * (p - b) * (p - c));
+//   console.log("S = " + s.toFixed(3));
+// }
 
 // task-7
 // let currentDate = new Date();
