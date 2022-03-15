@@ -70,62 +70,69 @@
 
 
 // task-6
-const a = +prompt("Довжина сторони трикутника - a: ");
-const b = +prompt("Довжина сторони трикутника - b: ");
-const c = +prompt("Довжина сторони трикутника - c: ");
+// const a = +prompt("Довжина сторони трикутника - a: ");
+// const b = +prompt("Довжина сторони трикутника - b: ");
+// const c = +prompt("Довжина сторони трикутника - c: ");
 
-if (isNaN(a) || isNaN(b) || isNaN(c)) {
-  alert("Incorrect data");
-}
+// if (isNaN(a) || isNaN(b) || isNaN(c)) {
+//   alert("Incorrect data");
+// }
 
-if (
-  //перевірка чи є гіпотенуза
-  c ** 2 == (a ** 2) + (b ** 2) ||
-  a ** 2 == (c ** 2) + (b ** 2) ||
-  b ** 2 == (a ** 2) + (c ** 2)
-) {
-  console.log("прямокутник");
-  // S для прямокутного трикутника
-  const s = (a * b) / 2 || (c * b) / 2 || (a * c) / 2;
-  console.log("S = " + s.toFixed(3));
-} else {
-  console.log("НЕ прямокутник");
-  // S для не прямокутного трикутника
-  const p = (1 / 2) * (a + b + c);
-  const s = Math.sqrt(p * (p - a) * (p - b) * (p - c));
-  console.log("S = " + s.toFixed(3));
-}
+// if (
+//   //перевірка чи є гіпотенуза
+//   c ** 2 == (a ** 2) + (b ** 2) ||
+//   a ** 2 == (c ** 2) + (b ** 2) ||
+//   b ** 2 == (a ** 2) + (c ** 2)
+// ) {
+//   console.log("прямокутник");
+//   // S для прямокутного трикутника
+//   const s = (a * b) / 2 || (c * b) / 2 || (a * c) / 2;
+//   console.log("S = " + s.toFixed(3));
+// } else {
+//   console.log("НЕ прямокутник");
+//   // S для не прямокутного трикутника
+//   const p = (1 / 2) * (a + b + c);
+//   const s = Math.sqrt(p * (p - a) * (p - b) * (p - c));
+//   console.log("S = " + s.toFixed(3));
+// }
 
 
 // task-7
-// let currentDate = new Date();
-// let currentHour = currentDate.getHours();
-// let currentMinute = currentDate.getMinutes();
-// console.log(`${currentHour}год ${currentMinute}хв`);
+let currentDate = new Date();
+let currentHour = currentDate.getHours();
+let currentMinute = currentDate.getMinutes();
+console.log(`Зараз ${currentHour}год ${currentMinute}хв`);
 
-//спосіб 1 - if
-// if(currentHour >= 23 || currentHour <= 5) {
-//     console.log('Доброї ночі!');
-// } 
-// if(currentHour > 5 && currentHour < 11) {
-//     console.log('Доброго ранку!');
-// }
-// if(currentHour >= 11 && currentHour <= 17) {
-//     console.log('Доброго дня!');
-// }
-// if (currentHour > 17 && currentHour < 23) {
-//     console.log('Доброго вечора!');
-// }
-
-//спосіб 2 - if...else if
+//спосіб 1 - if...else if
 // if(currentHour >= 23 || currentHour <= 5) {
 //     console.log('Доброї ночі!');
 // } else if(currentHour > 5 && currentHour < 11) {
 //     console.log('Доброго ранку!');
 // } else if(currentHour >= 11 && currentHour <= 17) {
 //     console.log('Доброго дня!');
-// } else if (currentHour > 17 && currentHour < 23) {
+// } else {
 //     console.log('Доброго вечора!');
 // }
 
+//спосіб 2 - switch...case
+const goodNight = 23 && 0 && 1 && 2 && 3 && 4 && 5;
+const goodMorning = 6 && 7 && 8 && 9 && 10 && 11;
+const goodAfternoon = 12 && 13 && 14 && 15 && 16 && 17;
 
+switch (currentHour) {
+    case goodNight:
+        console.log('Доброї ночі!');
+        break;
+
+    case goodMoning: 
+        console.log('Доброго ранку!');
+        break;
+
+    case goodAfternoon: 
+        console.log('Доброго дня!');
+        break;
+    
+    default: 
+        console.log('Доброго вечора!');
+        break;
+}
