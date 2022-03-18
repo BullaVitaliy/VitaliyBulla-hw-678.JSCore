@@ -68,7 +68,6 @@
 //    alert('Ви ще надто молоді');
 // }
 
-
 // task-6
 // const a = +prompt("Довжина сторони трикутника - a: ");
 // const b = +prompt("Довжина сторони трикутника - b: ");
@@ -96,7 +95,6 @@
 //   console.log("S = " + s.toFixed(3));
 // }
 
-
 // task-7
 let currentDate = new Date();
 let currentHour = currentDate.getHours();
@@ -115,41 +113,53 @@ console.log(`Зараз ${currentHour}год ${currentMinute}хв`);
 // }
 
 //спосіб 2 - switch...case
-switch (currentHour) {
-    case 23:
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-        console.log('Доброї ночі!');
-        break;
+// switch (currentHour) {
+//     case 23:
+//     case 1:
+//     case 2:
+//     case 3:
+//     case 4:
+//     case 5:
+//         console.log('Доброї ночі!');
+//         break;
 
-    case 6: 
-    case 7: 
-    case 8: 
-    case 9: 
-    case 10: 
-    case 11: 
-        console.log('Доброго ранку!');
-        break;
+//     case 6:
+//     case 7:
+//     case 8:
+//     case 9:
+//     case 10:
+//     case 11:
+//         console.log('Доброго ранку!');
+//         break;
 
-    case 12: 
-    case 13: 
-    case 14: 
-    case 15: 
-    case 16: 
-    case 17: 
-        console.log('Доброго дня!');
-        break;
-    
-    default: 
-        console.log('Доброго вечора!');
-        break;
+//     case 12:
+//     case 13:
+//     case 14:
+//     case 15:
+//     case 16:
+//     case 17:
+//         console.log('Доброго дня!');
+//         break;
+
+//     default:
+//         console.log('Доброго вечора!');
+//         break;
+// }
+
+
+//спосіб 3 - switch...case
+switch (true) {
+  case currentHour >= 5 && currentHour < 12:
+    console.log("Доброго ранку!");
+    break;
+  case currentHour >= 12 && currentHour <= 17:
+    console.log("Доброго дня!");
+    break;
+  case currentHour >= 18 && currentHour <= 23:
+    console.log("Доброго вечора!");
+    break;
+
+  default:
+    console.log("Доброї ночі!");
+    break;
 }
-
-
-
-
-
-
