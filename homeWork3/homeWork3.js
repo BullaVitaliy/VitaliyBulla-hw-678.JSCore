@@ -17,7 +17,6 @@
 // }
 // console.log(result);
 
-
 //task-2
 // for(let i = 0; i <= 15; i++) {
 //     i % 2 == 0 ? document.write(`${i} is even <br \/>`) : document.write(`${i} is odd <br \/>`) ;
@@ -29,19 +28,67 @@
 //     // }
 // }
 
-
 //task-3
 // const array = [];
 
 // function randArray(count) {
-//     for(let i = 1; i <= count; i++) { 
+//     for(let i = 1; i <= count; i++) {
 //         array.push(Math.floor(Math.random() * 500) + 1)
-//     }  
+//     }
 // }
 
 // randArray(5)
 // console.log(array);
 
-
 //task-4
+// const a = +prompt('Write number');
+// const b = +prompt('Write degree');
+
+// function raiseToDegree(a, b) {
+//     alert(Math.round(a) ** Math.round(b))
+// }
+
+// raiseToDegree(a, b);
+
+//task-5
+// function findMin() {
+//   min = arguments[0];
+
+//   for (let i = 1; i < arguments.length; i++) {
+//     if (arguments[i] < min) min = arguments[i];
+//   }
+// }
+
+// findMin(12, 14, 4, -4, 0.2);
+// console.log(`min = ${min}`);
+
+
+//task-6
+//...in process
+
+
+//task-7
+// function lastElem(arr, count) {
+//   if (count > 0) {
+//     console.log(arr.splice(-count, count));
+//   } else {
+//     console.log(arr.splice(-1));
+//   }
+// }
+// lastElem([3, 4, 10, -5]);
+// lastElem([3, 4, 10, -5], 2);
+// lastElem([3, 4, 10, -5], 8);
+
+
+// let arr = [3, 4, 10, -5];
+// console.log(arr.splice(-2, 2));
+
+
+//task-8
+// function getString(str) {
+//     let toArray = str.split(' '); 
+//     console.log(toArray);
+//     //...in process
+// }
+// getString('i love java script' ); 
 
