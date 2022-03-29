@@ -1,3 +1,4 @@
+//loops, function
 //task-1
 // const array = [2, 3, 4, 5];
 
@@ -62,9 +63,8 @@
 // findMin(12, 14, 4, -4, 0.2);
 // console.log(`min = ${min}`);
 
-
 //task-6
-//...in process
+
 
 
 //task-7
@@ -79,16 +79,19 @@
 // lastElem([3, 4, 10, -5], 2);
 // lastElem([3, 4, 10, -5], 8);
 
-
 // let arr = [3, 4, 10, -5];
 // console.log(arr.splice(-2, 2));
 
 
 //task-8
 // function getString(str) {
-//     let toArray = str.split(' '); 
-//     console.log(toArray);
-//     //...in process
-// }
-// getString('i love java script' ); 
+//   let StrToArray = str.split(" ");
+//   console.log(StrToArray);
 
+//   StrToArray.forEach(function (abc, i, StrToArray) {
+//     const nameCapitalized = abc.charAt(0).toUpperCase() + abc.slice(1);
+//     console.log(nameCapitalized);
+//   });
+
+// }
+// getString("i love java script");
