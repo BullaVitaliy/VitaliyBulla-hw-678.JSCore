@@ -63,7 +63,20 @@
 // findMin(12, 14, 4, -4, 0.2);
 // console.log(`min = ${min}`);
 
+
 //task-6
+function findUnique(arr) {  
+    const arr2 = [...new Set(arr)];
+
+    if(arr.length == arr2.length){
+        console.log(true);
+    } else {
+        console.log(false);
+    }
+};
+
+findUnique([1, 2, 3, 5, 3]);  // => false
+findUnique([1, 2, 3, 5, 11]); // => true
 
 
 
@@ -81,7 +94,6 @@
 
 // let arr = [3, 4, 10, -5];
 // console.log(arr.splice(-2, 2));
-
 
 //task-8
 // function getString(str) {
