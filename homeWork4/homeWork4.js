@@ -65,3 +65,53 @@ function showUsers(ids) {
   showUser(ids);
 }
 showUsers([7, -12, 44, 22]);
+
+
+//not worked
+// function showUser(id) {
+//   if (id < 0) {
+//     // throw new Error("Write positive number");
+//   } else {
+//     return { id };
+//   }
+// }
+
+// function showUsers(ids) {
+//   for (let i = 1; i < ids.length; i++) {
+//     let element = ids[i];
+//     showUser(element);
+//     if(element > 0) {
+//         console.log(` ${element}`);
+//     }
+//     if (element < 0) {
+//       throw new Error(`ID must not be negative: ${element} `);
+//     }
+
+//   }
+// //   console.log(`id : ${element}`);
+// //   return [{'id': element}]
+// }
+
+// try {
+//   showUsers([7, -12, 44, 22]);
+// } catch (exception) {
+//   console.log(exception.stack);
+// }
+
+// function showUsers(ids) {
+//   try {
+//     for (let i = 1; i < ids.length; i++) {
+//       const element = array[i];
+//       showUser(element);
+//     }
+
+//     if (element  0) {
+//       return [{ ids }];
+//     }
+
+//   } catch (exception) {
+//       console.log('exception');
+//     // throw new Error(`ID must not be negative: `);
+//   }
+// }
+// showUsers([7, -12, 44, 22]);
