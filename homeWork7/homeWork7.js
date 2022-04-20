@@ -98,13 +98,6 @@ window.addEventListener("resize", function () {
   p_height.innerHTML = "Height: " + newHeight;
 });
 
-// window.addEventListener("resize", function (e) {
-//   // let newWidth = window.innerWidth;
-//   // let newHeight = window.innerHeight;
-//   document.write(
-//     "width: " + screen.width + ", " + "height: " + screen.height
-//   );
-// });
 
 //task-7
 // const cityArr = {
