@@ -11,5 +11,23 @@
 // upperCase("regexp");
 // upperCase("RegExp");
 
+const { reverse } = require("dns")
+
 
 // task-2
+// function checkEmail(str) {
+//     let regExp = /^\w+@\D+\.\D{3}/
+//     let res = regExp.test(str);
+//     console.log(res);
+// }
+// checkEmail("Qmail2@gmail.com");
+
+
+//task-3
+//    re = (d{1}b+d)/ig
+
+
+//task-4
+// split reverse
+// split replese
+ 

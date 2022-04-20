@@ -1,22 +1,22 @@
 //BOM. Events
 
 //task-1
-let myWindow = window.open("", "", "width=300, height=300");
-console.log(myWindow);
+// let myWindow = window.open("", "", "width=300, height=300");
+// console.log(myWindow);
 
-setTimeout(function () {
-  myWindow.resizeTo(500, 500);
-  console.log("Window size was change");
-}, 2000);
+// setTimeout(function () {
+//   myWindow.resizeTo(500, 500);
+//   console.log("Window size was change");
+// }, 2000);
 
-setTimeout(function () {
-  myWindow.moveTo(200, 200);
-  console.log("Window position was change");
-}, 4000);
+// setTimeout(function () {
+//   myWindow.moveTo(200, 200);
+//   console.log("Window position was change");
+// }, 4000);
 
-setTimeout(function () {
-  myWindow.close();
-}, 6000);
+// setTimeout(function () {
+//   myWindow.close();
+// }, 6000);
 
 //task-2
 // function changeCSS() {
@@ -84,7 +84,27 @@ setTimeout(function () {
 // });
 
 //task-6
-// document.write("width: " + window.innerWidth + ", " + "height: " + window.innerHeight);
+const p_width = document.querySelector("#width");
+const screen_width = (p_width.innerHTML = "Width: " + window.innerWidth);
+
+const p_height = document.querySelector("#height");
+const screen_height = (p_height.innerHTML = "Height: " + window.innerHeight);
+
+window.addEventListener("resize", function () {
+  let newWidth = window.innerWidth;
+  let newHeight = window.innerHeight;
+
+  p_width.innerHTML = "Width: " + newWidth;
+  p_height.innerHTML = "Height: " + newHeight;
+});
+
+// window.addEventListener("resize", function (e) {
+//   // let newWidth = window.innerWidth;
+//   // let newHeight = window.innerHeight;
+//   document.write(
+//     "width: " + screen.width + ", " + "height: " + screen.height
+//   );
+// });
 
 //task-7
 // const cityArr = {
