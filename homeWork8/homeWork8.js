@@ -1,6 +1,6 @@
 //task-1
 function upperCase(str) {
-  let regExp = /^[A-Z]/;
+  let regExp = /^[A-Z]{1}/;
   let result = regExp.test(str);
   if (result === true) {
     console.log("String's starts with uppercase character");
@@ -8,8 +8,8 @@ function upperCase(str) {
     console.log("String's not starts with uppercase character");
   }
 }
-upperCase("regexp");
-// upperCase("RegExp");
+// upperCase("regexp");
+upperCase("RegExp");
 
 // task-2
 // function checkEmail(str) {
@@ -35,6 +35,7 @@ upperCase("regexp");
 //task-5
 // function cardValid(cardNumber) {
 // const re = /\d{4}-\d{4}-\d{4}-\d{4}/;
+
 //   let result = re.test(cardNumber);
 //   if (result === true) {
 //     console.log("Card number correct");
@@ -42,13 +43,12 @@ upperCase("regexp");
 //     console.log("Card number not correct");
 //   }
 // }
-
 // cardValid("9999-9999-9999-9999");
+
 
 //task-6
 // function checkEmail(email) {
 //   const re = /^[^\.!@#\$%\^&\*\(\)_\+-=]\w+[\-]?\w+@(\w+)\.(\w{3})$/i;
-
 //   let result = re.test(email);
 
 //   if (result === true) {
@@ -61,6 +61,7 @@ upperCase("regexp");
 // checkEmail("#my_mail@gmail.com");//Email is not correct!
 // checkEmail('my_ma--il@gmail.com');//Email is not correct!
 
+
 //task-7
 // function checkLogin(login) {
 //   const re = /^[^\d][^!@#\$%\^&\*\(\)_\+-=]\w+\.?\w+/;
@@ -71,6 +72,5 @@ upperCase("regexp");
 //   let result_second = login.match(re_second);
 //   console.log(result_second);
 // }
-
 // checkLogin("ee1.1ret3"); //true
 // // checkLogin("ee1*1ret3"); //false
