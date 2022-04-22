@@ -3,7 +3,7 @@ function upperCase(str) {
   let regExp = /^[A-Z]/;
   let result = regExp.test(str);
   if (result === true) {
-    console.log("Strings starts with uppercase character");
+    console.log("String's starts with uppercase character");
   } else if (result === false) {
     console.log("String's not starts with uppercase character");
   }
